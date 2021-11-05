@@ -1,0 +1,97 @@
+<!-- CSS: More on CSS Pseudo Selectors -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Course.in</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Ubuntu:wght@300&family=Viga&display=swap"
+        rel="stylesheet ">
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Ubuntu', sans-serif;
+        /* opacity: 1; */
+
+        
+    }
+    header::before{
+        content: "";
+        background: url('https://source.unsplash.com/user/erondu/1600x900');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+      
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 95px 45px;
+
+
+
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        height: 400px;
+
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /* section::afte{
+        content: "This is a content";
+    } */
+    .navigation {
+        display: flex;
+        font-size: 24px;
+    }
+
+    li {
+        list-style: none;
+        padding: 13px 25px;
+    }
+
+    h3 {
+        font-size: 4rem;
+        /* opacity: 1; */
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navabar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services </li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to Coding Hub</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis amet quibusdam aliquid alias sit vitae,
+            ex fuga dicta eaque deleniti aliquam eveniet veritatis iste! Accusamus neque illum pariatur eaque nisi.
+        </p>
+    </section>
+    <hr>
+
+
+</body>
+
+</html>
